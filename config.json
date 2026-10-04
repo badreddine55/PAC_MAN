@@ -1,0 +1,37 @@
+{
+    # --- Files ---
+    "highscore_filename": "data/highscores.json",
+
+    # --- Player ---
+    "lives": 3,
+
+    # --- Scoring (X, Y, Z in the subject) ---
+    "points_per_pacgum": 10, 
+    "points_per_super_pacgum": 50,
+    "points_per_ghost": 200,
+    "ghost_edible_duration": 50,
+    "lives": 5,
+    "pacgum": 50,
+
+    # --- Generation ---
+    # Seed used for level 1 only. Later levels are random.
+    "seed": 42,
+
+    # --- Timing ---
+    # Seconds allowed per level
+    "level_max_time": 90,
+
+    # --- Levels (the subject requires at least 10) ---
+    "levels": [
+        { "width": 15, "height": 15 },
+        { "width": 17, "height": 15 },
+        { "width": 17, "height": 17 },
+        { "width": 19, "height": 17 },
+        { "width": 19, "height": 19 },
+        { "width": 21, "height": 19 },
+        { "width": 21, "height": 21 },
+        { "width": 23, "height": 21 },
+        { "width": 23, "height": 23 },
+        { "width": 25, "height": 23 }
+    ]
+}
