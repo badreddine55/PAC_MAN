@@ -1,17 +1,15 @@
 {
     # --- Files ---
-    "highscore_filename": "data/highscores.json",
-
-    # --- Player ---
-    "lives": 3,
+    "highscore_filename": "highscores.json",
 
     # --- Scoring (X, Y, Z in the subject) ---
     "points_per_pacgum": 10, 
     "points_per_super_pacgum": 50,
     "points_per_ghost": 200,
-    "ghost_edible_duration": 50,
+    "ghost_edible_duration": -50,
     "lives": 5,
     "pacgum": 50,
+    "ghost_respawn_delay": 5,
 
     # --- Generation ---
     # Seed used for level 1 only. Later levels are random.
