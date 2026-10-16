@@ -386,8 +386,8 @@ class Parser:
 
         return clean
     
-#still one thing this part I diden't see it from the start  
-#  Lines starting with # are comments and must be ignored. You may also
-# support additional comment styles (e.g., C or C++).
-# The exact structure is up to you, but document your keys in the README and provide
-# robust defaults.
+# One more thing I missed at the beginning:
+
+# "Lines starting with # are comments and must be ignored. "
+# "You may also support additional comment styles (e.g., C or C++). "
+# "The exact structure is up to you, but document your keys in the README and provide robust defaults."

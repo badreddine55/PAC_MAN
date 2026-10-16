@@ -14,8 +14,8 @@
     # --- Generation ---
     # Seed used for level 1 only. Later levels are random.
     "seed": 42,
-  
-    # --- Timing ---
+
+        # --- Timing ---
     # Seconds allowed per level
     "level_max_time": 90,
 
