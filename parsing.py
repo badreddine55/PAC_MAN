@@ -165,7 +165,7 @@ class Parser:
     # ------------------------------------------------------------------
 
     def _check_int(self, key: str, value: Any) -> int:
-        """Return value if valid for key; clamp it or use the default."""
+        """Return value if valid for key; use the default."""
         default, low, high = self.INT_RULES[key]
 
         # type() instead of isinstance(): isinstance(True, int) is True
@@ -177,12 +177,12 @@ class Parser:
             return default
         if value < low:
             self._warn(
-                f"'{key}': {value} is below {low}. Clamped to {low}"
+                f"'{key}': {value} is below {low}. will use the default {default}"
             )
             return low
         if value > high:
             self._warn(
-                f"'{key}': {value} is above {high}. Clamped to {high}"
+                f"'{key}': {value} is above {high}.  will use the default {default}"
             )
             return high
         return value
@@ -385,3 +385,9 @@ class Parser:
         clean["levels"] = self._check_levels(data_dict)
 
         return clean
+    
+#still one thing this part I diden't see it from the start  
+#  Lines starting with # are comments and must be ignored. You may also
+# support additional comment styles (e.g., C or C++).
+# The exact structure is up to you, but document your keys in the README and provide
+# robust defaults.
